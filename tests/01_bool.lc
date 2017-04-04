@@ -1,0 +1,30 @@
+
+-------------------------------------------------------------------------------
+-- DO NOT MODIFY THIS SEGMENT
+-------------------------------------------------------------------------------
+
+let TRUE  = \x y -> x
+let FALSE = \x y -> y
+let ITE   = \b x y -> b x y
+let NOT   = \b x y -> b y x
+let AND   = \b1 b2 -> ITE b1 b2 FALSE
+let OR    = \b1 b2 -> ITE b1 TRUE b2
+
+-------------------------------------------------------------------------------
+-- YOU SHOULD ONLY MODIFY THE TEXT BELOW, JUST THE PARTS MARKED AS COMMENTS 
+-------------------------------------------------------------------------------
+
+eval not_true :
+  NOT TRUE
+  -- (a) fill in your reductions here
+  =d> FALSE
+
+eval and_true_false :
+  AND TRUE FALSE
+  -- (b) fill in your reductions here
+  =d> FALSE
+
+eval or_false_true :
+  OR FALSE TRUE
+  -- (c) fill in your reductions here
+  =d> TRUE

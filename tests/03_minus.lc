@@ -1,0 +1,123 @@
+
+--------------------------------------------------------------------------------
+-- Booleans
+--------------------------------------------------------------------------------
+
+let TRUE  = \x y -> x
+let FALSE = \x y -> y
+let ITE   = \b x y -> b x y
+let AND   = \b1 b2 -> ITE b1 b2 FALSE
+let OR    = \b1 b2 -> ITE b1 TRUE b2
+
+--------------------------------------------------------------------------------
+-- Numbers
+--------------------------------------------------------------------------------
+
+let ZERO  = \f x -> x
+let ONE   = \f x -> f x
+let TWO   = \f x -> f (f x)
+let INCR  = \n f x -> f (n f x)
+
+--------------------------------------------------------------------------------
+-- Pairs
+--------------------------------------------------------------------------------
+
+let PAIR  = \x y b -> ITE b x y
+let FST   = \p     -> p TRUE
+let SND   = \p     -> p FALSE
+
+--------------------------------------------------------------------------------
+-- do not modify text BEFORE this line
+--------------------------------------------------------------------------------
+
+let SKIP1 = undefined       -- (a)
+let DECR  = undefined       -- (b)
+let SUB   = undefined       -- (c)
+let ISZ   = undefined       -- (d) 
+let EQL   = undefined       -- (e)
+
+--------------------------------------------------------------------------------
+-- do not modify text AFTER this line
+--------------------------------------------------------------------------------
+
+-- part (a)
+
+eval skip1_false :
+  SKIP1 INCR (PAIR FALSE ZERO)
+  =~> (\b -> b TRUE ZERO)         --  PAIR TRUE ZERO
+
+eval skip1_true_zero :
+  SKIP1 INCR (PAIR TRUE ZERO)
+  =~> (\b -> b TRUE ONE)          -- PAIR TRUE ONE
+
+eval skip1_true_one :
+  SKIP1 INCR (PAIR TRUE ONE)
+  =~> (\b -> b TRUE TWO)          -- PAIR TRUE TWO
+
+--------------------------------------------------------------------------------
+
+-- part (b)
+
+eval decr_zero :
+  DECR ZERO
+  =~> ZERO
+
+eval decr_one :
+  DECR ONE
+  =~> ZERO
+
+eval decr_two :
+  DECR TWO
+  =~> ONE
+
+--------------------------------------------------------------------------------
+
+-- part (c)
+
+eval sub_two_zero :
+  SUB TWO ZERO
+  =~> TWO
+
+eval sub_two_one :
+  SUB TWO ONE
+  =~> ONE
+
+eval sub_two_two :
+  SUB TWO TWO
+  =~> ZERO
+
+eval sub_two_three :
+  SUB ONE TWO
+  =~> ZERO
+
+--------------------------------------------------------------------------------
+
+-- part (d)
+
+eval isz_zero :
+  ISZ ZERO
+  =~> TRUE
+
+eval isz_one :
+  ISZ ONE
+  =~> FALSE
+
+--------------------------------------------------------------------------------
+
+-- part (e)
+
+eval eq_zero_zero :
+  EQL ZERO ZERO
+  =~> TRUE
+
+eval eq_zero_one :
+  EQL ZERO ONE
+  =~> FALSE
+
+eval eq_one_two :
+  EQL ONE TWO
+  =~> FALSE
+
+eval eq_two_two :
+  EQL TWO TWO
+  =~> TRUE
