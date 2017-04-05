@@ -146,7 +146,7 @@ steps needed to reduce `ADD TWO TWO` to `FOUR`.
 ## Problem 3: `03_minus.lc`
 
 **NOTE:** You only need to write lambda-calculus
-definitions for `SKIP1`, `DECR`, `SUB` and `EQL`.
+definitions for `SKIP1`, `DECR`, `SUB`, `ISZ` and `EQL`.
 If you modify **any other** other part of the file
 you will get 0 points for the assignment.
 
