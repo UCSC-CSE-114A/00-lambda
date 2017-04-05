@@ -14,7 +14,7 @@ bin:
 clean: 
 	stack clean
 
-turnin: distclean
+turnin: clean
 	tar -zcvf ../$(ASGN)-$(COMPILER).tgz --exclude .git --exclude .stack-work ../$(ASGN)-$(COMPILER)
 	mv ../$(ASGN)-$(COMPILER).tgz .
 	turnin -c $(COURSE) -p $(ASGN) ./$(ASGN)-$(COMPILER).tgz
