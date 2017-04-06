@@ -33,7 +33,7 @@ let SND   = \p     -> p FALSE
 let SKIP1 = undefined       -- (a)
 let DECR  = undefined       -- (b)
 let SUB   = undefined       -- (c)
-let ISZ   = undefined       -- (d) 
+let ISZ   = undefined       -- (d)
 let EQL   = undefined       -- (e)
 
 --------------------------------------------------------------------------------
