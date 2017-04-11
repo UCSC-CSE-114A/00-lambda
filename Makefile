@@ -2,19 +2,19 @@
 #####################################################################################################
 COURSE=cs130s
 ASGN=00
-COMPILER=lambda 
+COMPILER=lambda
 #####################################################################################################
 
-test: 
+test:
 	stack test
 
 bin:
 	stack build
 
-clean: 
+clean:
 	stack clean
 
-turnin: distclean
+turnin: clean
 	tar -zcvf ../$(ASGN)-$(COMPILER).tgz --exclude .git --exclude .stack-work ../$(ASGN)-$(COMPILER)
 	mv ../$(ASGN)-$(COMPILER).tgz .
 	turnin -c $(COURSE) -p $(ASGN) ./$(ASGN)-$(COMPILER).tgz

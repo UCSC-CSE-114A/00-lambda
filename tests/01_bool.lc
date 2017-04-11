@@ -1,48 +1,30 @@
+
 -------------------------------------------------------------------------------
 -- DO NOT MODIFY THIS SEGMENT
 -------------------------------------------------------------------------------
-let TRUE = \x y -> x
+
+let TRUE  = \x y -> x
 let FALSE = \x y -> y
-let ITE = \b x y -> b x y
-let NOT = \b x y -> b y x
-let AND = \b1 b2 -> ITE b1 b2 FALSE
-let OR = \b1 b2 -> ITE b1 TRUE b2
+let ITE   = \b x y -> b x y
+let NOT   = \b x y -> b y x
+let AND   = \b1 b2 -> ITE b1 b2 FALSE
+let OR    = \b1 b2 -> ITE b1 TRUE b2
+
 -------------------------------------------------------------------------------
 -- YOU SHOULD ONLY MODIFY THE TEXT BELOW, JUST THE PARTS MARKED AS COMMENTS
 -------------------------------------------------------------------------------
+
 eval not_true :
-NOT TRUE
--- (a) fill in your reductions here
-=d>(\b x y -> b y x) (\x y -> x)
-=b>(\x y -> (\x y -> x) y x )
-=a>(\x y -> (\x1 y1 -> x1) y x)
-=b>(\x y -> (\y1 -> y ) x)
-=b>(\x y -> y)
-=d> FALSE
+  NOT TRUE
+  -- (a) fill in your reductions here
+  =d> FALSE 
+
 eval and_true_false :
-AND TRUE FALSE
--- (b) fill in your reductions here
-=d> (\b1 b2 -> ITE b1 b2 FALSE) TRUE FALSE
-=d> (\b1 b2 -> (\b x y -> b x y) b1 b2 FALSE) TRUE FALSE
-=b> (\b1 b2 -> (\x y -> b1 x y ) b2 FALSE) TRUE FALSE
-=b> (\b1 b2 -> (\y -> b1 b2 y) FALSE) TRUE FALSE
-=b> (\b1 b2 -> (b1 b2 FALSE)) TRUE FALSE
-=b> (\b2 -> (TRUE b2 FALSE)) FALSE
-=b> (TRUE FALSE FALSE)
-=d> (\x y -> x) FALSE FALSE
-=b> (\y -> FALSE) FALSE
-=b> FALSE
+  AND TRUE FALSE
+  -- (b) fill in your reductions here
+  =d> FALSE
 
 eval or_false_true :
-OR FALSE TRUE
--- (c) fill in your reductions here
-=d> (\b1 b2 -> ITE b1 TRUE b2) FALSE TRUE
-=d> (\b1 b2 -> (\b x y -> b x y) b1 TRUE b2) FALSE TRUE
-=b> (\b1 b2 -> (\x y -> b1 x y ) TRUE b2 ) FALSE TRUE
-=b> (\b1 b2 -> (\y -> b1 TRUE y) b2) FALSE TRUE
-=b> (\b1 b2 -> (b1 TRUE b2)) FALSE TRUE
-=b> (\b2 -> (FALSE TRUE b2 )) TRUE
-=b> (FALSE TRUE TRUE)
-=d> (\x y -> y) TRUE TRUE
-=b> (\y -> y) TRUE
-=b> TRUE
+  OR FALSE TRUE
+  -- (c) fill in your reductions here
+  =d> TRUE
