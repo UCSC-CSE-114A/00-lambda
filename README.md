@@ -8,9 +8,12 @@ headerImg: angles.jpg
 Get this assignment by running:
 
 ```
-git clone https://gitlab.soe.ucsc.edu/gitlab/cmps112/spring-19/hw0-lambda
+git clone git@gitlab.soe.ucsc.edu:cmps112/spring-19/hw0-lambda.git
 ```
-
+OR
+```
+git clone https://gitlab.soe.ucsc.edu/gitlab/cmps112/spring-19/hw0-lambda.git
+```
 
 ## Overview : Lambda Calculus
 
@@ -27,7 +30,7 @@ The assignment is in the files:
 You can edit these files and then run them,
 
 * either on the [online site](http://goto.ucsd.edu:8095/index.html), OR
-* by running `$stack exec elsa path/to/file.lc` on a linux machine (yours or e.g., `unix.ucsc.edu`), OR
+* by running `$ stack exec elsa path/to/file.lc` on a unix machine (with stack installed), OR
 * by locally installing `elsa` following [these instructions](https://github.com/ucsd-progsys/elsa#install)
 
 If you run it online, be sure to **copy back the result**
@@ -35,7 +38,7 @@ into the corresponding local file before submitting.
 
 ## Assignment Testing and Evaluation
 
-Your functions/programs **must** compile and run on `ieng6.ucsd.edu`.
+Your functions/programs **must** compile and run with `stack`.
 
 All the points will be awarded automatically, by
 **evaluating your functions against a given test suite**.
