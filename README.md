@@ -3,12 +3,12 @@ title: HW 0 (140 points)
 headerImg: angles.jpg
 ---
 
-## Due by Friday 4/14 23:59:59
+## Due by Friday 4/12 23:59:59
 
 Get this assignment by running:
 
 ```
-git clone https://github.com/ucsd-cse130/00-lambda.git
+git clone https://gitlab.soe.ucsc.edu/gitlab/cmps112/spring-19/hw0-lambda
 ```
 
 
@@ -27,7 +27,7 @@ The assignment is in the files:
 You can edit these files and then run them,
 
 * either on the [online site](http://goto.ucsd.edu:8095/index.html), OR
-* by running `$ elsa path/to/file.lc` on `ieng6.ucsd.edu`, OR
+* by running `$stack exec elsa path/to/file.lc` on a linux machine (yours or e.g., `unix.ucsc.edu`), OR
 * by locally installing `elsa` following [these instructions](https://github.com/ucsd-progsys/elsa#install)
 
 If you run it online, be sure to **copy back the result**
@@ -74,17 +74,15 @@ but you will not be graded on this.
 
 ## Submission Instructions
 
-To submit your code, just do:
+To submit your code, run:
 
 ```bash
-$ make turnin
+$ make prepare
 ```
 
-`turnin` will provide you with a confirmation of the
-submission process; make sure that the size of the file
-indicated by `turnin` matches the size of your file.
-See the ACS Web page on [turnin](http://acs.ucsd.edu/info/turnin.php)
-for more information on the operation of the program.
+Then, upload the newly-created file `00-lambda.tgz` as your submission to 
+the Canvas assignment.
+
 
 **REMARK**: For problems 1 and 2, when using `=d>`, you don't need to unfold
 every definition. It is often easier to keep some definitions folded until
