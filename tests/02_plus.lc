@@ -21,12 +21,12 @@ eval suc_one :
   -- (a) fill in your reductions here
   =d> TWO
 
-eval add_zero_zero :
-  ADD ZERO ZERO
+eval add_one_zero :
+  ADD ONE ZERO
   -- (b) fill in your reductions here
-  =d> ZERO
+  =d> ONE
 
-eval add_two_two :
-  ADD TWO TWO
+eval add_one_two :
+  ADD ONE TWO 
   -- (c) fill in your reductions here
-  =d> FOUR
+  =d> THREE

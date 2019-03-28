@@ -103,19 +103,19 @@ last line.
 ### Part (a) (5 points)
 
 Complete the sequence of `=a>`, `=b>` and `=d>`
-steps needed to reduce `NOT TRUE` to `FALSE`.
+steps needed to reduce `NOT FALSE` to `TRUE`.
 
 
 ### Part (b) (5 points)
 
 Complete the sequence of `=a>`, `=b>` and `=d>`
-steps needed to reduce `AND TRUE FALSE` to `FALSE`.
+steps needed to reduce `AND FALSE TRUE` to `FALSE`.
 
 
 ### Part (c) (5 points)
 
 Complete the sequence of `=a>`, `=b>` and `=d>`
-steps needed to reduce `OR FALSE TRUE` to `TRUE`.
+steps needed to reduce `OR TRUE FALSE` to `TRUE`.
 
 
 ## Problem 2: `02_plus.lc`  
@@ -136,12 +136,12 @@ steps needed to reduce `SUC ONE` to `TWO`.
 ### Part (b) (10 points)
 
 Complete the sequence of `=a>`, `=b>` and `=d>`
-steps needed to reduce `ADD ZERO ZERO` to `ZERO`.
+steps needed to reduce `ADD ONE ZERO` to `ONE`.
 
 ### Part (c) (10 points)
 
 Complete the sequence of `=a>`, `=b>` and `=d>`
-steps needed to reduce `ADD TWO TWO` to `FOUR`.
+steps needed to reduce `ADD ONE TWO` to `THREE`.
 
 ## Problem 3: `03_minus.lc`
 

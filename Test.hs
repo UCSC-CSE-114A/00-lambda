@@ -20,22 +20,22 @@ unit1 :: Score -> TestTree
 unit1 sc = testGroup "Unit 1"
   [ mkTest
       (check "01_bool.lc")
-      "not_true"
+      "not_false"
       True
       5
-      "bool: not_true"
+      "bool: not_false"
   , mkTest
       (check "01_bool.lc")
-      "and_true_false"
+      "and_false_true"
       True
       5
-      "bool: and_true_false"
+      "bool: and_false_true"
   , mkTest
       (check "01_bool.lc")
-      "or_false_true"
+      "or_true_false"
       True
       5
-      "bool: or_false_true"
+      "bool: or_true_false"
   , mkTest
       (check "02_plus.lc")
       "suc_one"
@@ -44,16 +44,16 @@ unit1 sc = testGroup "Unit 1"
       "add: suc_one"
   , mkTest
       (check "02_plus.lc")
-      "add_zero_zero"
+      "add_one_zero"
       True
       10
-      "add: add_zero_zero"
+      "add: add_one_zero"
   , mkTest
       (check "02_plus.lc")
-      "add_two_two"
+      "add_one_two"
       True
       10
-      "add: add_two_two"
+      "add: add_one_two"
   , mkTest
       (check "03_minus.lc")
       "skip1_false"
