@@ -1,6 +1,6 @@
 
 #####################################################################################################
-COURSE=cs130s
+COURSE=CMPS 122
 ASGN=00
 COMPILER=lambda
 #####################################################################################################
@@ -14,7 +14,6 @@ bin:
 clean:
 	stack clean
 
-turnin: clean
+prepare: clean
 	tar -zcvf ../$(ASGN)-$(COMPILER).tgz --exclude .git --exclude .stack-work ../$(ASGN)-$(COMPILER)
 	mv ../$(ASGN)-$(COMPILER).tgz .
-	turnin -c $(COURSE) -p $(ASGN) ./$(ASGN)-$(COMPILER).tgz
