@@ -1,8 +1,3 @@
----
-title: HW 0 (140 points)
-headerImg: angles.jpg
----
-
 ## Due by Friday 4/12 23:59:59
 
 Get this assignment by running:
