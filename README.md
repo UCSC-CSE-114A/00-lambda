@@ -1,13 +1,13 @@
 ## Due by Friday 4/12 23:59:59
 
-Get this assignment by running:
+Get this assignment by running (replace <cruzid> with your CruzID):
 
 ```
-git clone git@gitlab.soe.ucsc.edu:cmps112/spring-19/hw0-lambda.git
+git clone git@gitlab.soe.ucsc.edu:cmps112/spring-19/hw0-lambda/hw0-<cruzid>.git
 ```
 OR
 ```
-git clone https://gitlab.soe.ucsc.edu/gitlab/cmps112/spring-19/hw0-lambda.git
+git clone https://gitlab.soe.ucsc.edu/gitlab/cmps112/spring-19/hw0-lambda/hw0-<cruzid>.git
 ```
 
 ## Overview : Lambda Calculus
