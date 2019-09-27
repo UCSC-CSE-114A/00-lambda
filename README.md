@@ -1,13 +1,13 @@
-## Due by Friday 4/12 23:59:59
+## Due by Friday 10/11/19 23:59:59
 
 Get this assignment by running (replace <cruzid> with your CruzID):
 
 ```
-git clone git@gitlab.soe.ucsc.edu:cmps112/spring-19/hw0-lambda/hw0-<cruzid>.git
+git clone git@gitlab.soe.ucsc.edu:cse116/fall-19/hw0-lambda/hw0-<cruzid>.git
 ```
 OR
 ```
-git clone https://gitlab.soe.ucsc.edu/gitlab/cmps112/spring-19/hw0-lambda/hw0-<cruzid>.git
+git clone https://gitlab.soe.ucsc.edu/gitlab/cse116/fall-19/hw0-lambda/hw0-<cruzid>.git
 ```
 
 ## Overview : Lambda Calculus
@@ -71,15 +71,7 @@ but you will not be graded on this.
 
 ## Submission Instructions
 
-To submit your code, run:
-
-```bash
-$ make prepare
-```
-
-Then, upload the newly-created file `00-lambda.tgz` as your submission to 
-the Canvas assignment.
-
+To submit your code, commit and push your repository to GitLab.
 
 **REMARK**: For problems 1 and 2, when using `=d>`, you don't need to unfold
 every definition. It is often easier to keep some definitions folded until
