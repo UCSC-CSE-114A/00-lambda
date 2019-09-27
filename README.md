@@ -3,11 +3,11 @@
 Get this assignment by running (replace <cruzid> with your CruzID):
 
 ```
-git clone git@gitlab.soe.ucsc.edu:cse116/fall-19/hw0-lambda/hw0-<cruzid>.git
+git clone git@gitlab.soe.ucsc.edu:cse116/fall2019/hw0-lambda/hw0-<cruzid>.git
 ```
 OR
 ```
-git clone https://gitlab.soe.ucsc.edu/gitlab/cse116/fall-19/hw0-lambda/hw0-<cruzid>.git
+git clone https://gitlab.soe.ucsc.edu/gitlab/cse116/fall2019/hw0-lambda/hw0-<cruzid>.git
 ```
 
 ## Overview : Lambda Calculus
