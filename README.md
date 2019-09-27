@@ -24,7 +24,6 @@ The assignment is in the files:
 
 You can edit these files and then run them,
 
-* either on the [online site](http://goto.ucsd.edu:8095/index.html), OR
 * by running `$ stack exec elsa path/to/file.lc` on a unix machine (with stack installed), OR
 * by locally installing `elsa` following [these instructions](https://github.com/ucsd-progsys/elsa#install)
 
