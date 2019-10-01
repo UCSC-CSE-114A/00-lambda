@@ -1,4 +1,4 @@
-## Due by Friday 10/11/19 23:59:59
+## Due by Monday 10/11/19 23:59:59
 
 Get this assignment by running (replace <cruzid> with your CruzID):
 

@@ -1,6 +1,5 @@
-
 #####################################################################################################
-COURSE=CMPS 122
+COURSE=CSE 116
 ASGN=00
 COMPILER=lambda
 #####################################################################################################
@@ -14,6 +13,9 @@ bin:
 clean:
 	stack clean
 
-prepare: clean
+distclean:
+	rm -drf .stack-work/
+
+prepare: distclean
 	tar -zcvf ../$(ASGN)-$(COMPILER).tgz --exclude .git --exclude .stack-work ../$(ASGN)-$(COMPILER)
 	mv ../$(ASGN)-$(COMPILER).tgz .
