@@ -13,7 +13,7 @@ bin:
 clean:
 	stack clean
 
-distclean:
+distclean: clean
 	rm -drf .stack-work/
 
 prepare: distclean
