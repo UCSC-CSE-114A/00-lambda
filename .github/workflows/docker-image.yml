@@ -1,0 +1,21 @@
+name: Docker Image CI
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      max-parallel: 2
+      matrix:
+        ghc: ["8.10.4"]
+        resolver: ["lts-17.7"]
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the Docker image
+      run: docker build ./.devcontainer/ --file ./.devcontainer/Dockerfile --build-arg GHC_VERSION=${{ matrix.ghc }} --build-arg STACK_RESOLVER=${{ matrix.resolver }} --tag vlza/haskelldevenv:${{ matrix.ghc }}-${{ matrix.resolver }}-$(date +%s)
+
+# TODO: Trigger release on tag, publish containers.

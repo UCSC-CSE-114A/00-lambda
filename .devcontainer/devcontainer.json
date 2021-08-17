@@ -1,0 +1,25 @@
+{
+    "name": "DevContainer for Haskell (GHC, Stack, Cabal, HIE, LSP, DAP, etc.)",
+    "dockerFile": "Dockerfile",
+    "context":"..",
+    "runArgs": [],
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "haskell.hlintOn": true,
+        "haskell.diagnosticsOnChange": true,
+        "haskell.liquidOn": true,
+        "haskell.completionSnippetsOn": true,
+        "haskell.formatOnImportOn": true,
+        "haskell.formattingProvider": "ormolu",
+        "haskell.languageServerVariant": "haskell-language-server",
+        "hoogle-vscode.useCabalDependencies": true,
+    },
+    "remoteUser": "haskeller",
+    "extensions": [
+        "haskell.haskell",
+        "phoityne.phoityne-vscode",
+        "eriksik2.vscode-ghci",
+        "justusadam.language-haskell",
+        "jcanero.hoogle-vscode"
+    ]
+}
