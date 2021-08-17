@@ -77,7 +77,7 @@ RUN cabal install phoityne-vscode haskell-dap hlint stylish-haskell hoogle ormol
 RUN hoogle generate && stack hoogle
 
 # Copy default GHCi config:
-COPY .ghci /home/${USERNAME} 
+COPY .devcontainer/.ghci /home/${USERNAME} 
 
 ENV DEBIAN_FRONTEND=dialog
 
