@@ -1,6 +1,6 @@
 name:                hw0-lambda
 version:             0.1.0.0
-synopsis:            Starter code for cse130 homework/00-haskell
+synopsis:            Starter code for UCSC 114a homework/00-lambda
 license:             MIT
 license-file:        LICENSE
 author:              Ranjit Jhala

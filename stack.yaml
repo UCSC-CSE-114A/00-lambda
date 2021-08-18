@@ -5,9 +5,9 @@ packages:
 - '.' 
 
 extra-deps:
-- elsa-0.2.0.1
+- elsa-0.2.1.2
 - dequeue-0.1.12
-- clock-0.7.2
+- clock-0.8.2
+- json-0.10
 
-resolver: lts-5.9
-
+resolver: lts-17.7
