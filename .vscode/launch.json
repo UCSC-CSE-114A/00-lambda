@@ -1,15 +1,14 @@
 {
     "version": "0.2.0",
     "configurations": [
-
         {
             "type": "ghc",
             "request": "launch",
             "name": "haskell-debug-adapter",
             "internalConsoleOptions": "openOnSessionStart",
             "workspace": "${workspaceRoot}",
-            "startup": "${workspaceRoot}/Main.hs",
-            "startupFunc": "",
+            "startup": "/workspaces/00-lambda/Main.hs",
+            "startupFunc": "main",
             "startupArgs": "",
             "stopOnEntry": false,
             "mainArgs": "",

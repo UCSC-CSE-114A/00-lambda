@@ -9,5 +9,7 @@ extra-deps:
 - dequeue-0.1.12
 - clock-0.8.2
 - json-0.10
+- tasty-1.2.3
+- tasty-hunit-0.10.0.3
 
 resolver: lts-17.7
