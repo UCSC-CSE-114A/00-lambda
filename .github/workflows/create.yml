@@ -2,11 +2,12 @@ name: "Create branch protection rule"
 on: create
 
 jobs:
-  test: # Test action's functionality
+  set_branch_protection: # Test action's functionality
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - uses: ./
+    - name: Branch Guardian
+      uses: infamous-riddles/branch-guardian@v1
       with: 
         PERSONAL-ACCESS-TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         BASE-BRANCH-PATTERN: '^hw.*$'
