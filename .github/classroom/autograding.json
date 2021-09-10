@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Stack Test",
+      "setup": "",
+      "run": "stack test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
