@@ -1,0 +1,13 @@
+name: "Create branch protection rule"
+on: create
+
+jobs:
+  test: # Test action's functionality
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: ./
+      with: 
+        PERSONAL-ACCESS-TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        BASE-BRANCH-PATTERN: '^hw.*$'
+        REQUIRED-NUMBER-OF-REVIEWERS: 1
