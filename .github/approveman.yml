@@ -1,0 +1,10 @@
+ownership_rules:
+  # If files inside .github directory should be allowed.
+  # When it is set of true, rules like .github/workflows/playground__{{username}}-*.yml
+  # can be enable with certain rules.
+  # When it is set of false (default value), a pull request will not be approved
+  # reguardless of rules if any files inside the .github folder is touched.
+  allow_dot_github: false
+directory_matching_rules:
+    - name: Student files
+      path: **/*
