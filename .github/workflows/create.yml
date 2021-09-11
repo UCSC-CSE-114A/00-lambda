@@ -10,5 +10,5 @@ jobs:
       uses: infamous-riddles/branch-guardian@v1
       with: 
         PERSONAL-ACCESS-TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-        BASE-BRANCH-PATTERN: '^hw.*$'
+        BASE-BRANCH-PATTERN: 'main'
         REQUIRED-NUMBER-OF-REVIEWERS: 1
