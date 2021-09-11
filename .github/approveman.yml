@@ -7,4 +7,4 @@ ownership_rules:
   allow_dot_github: false
 directory_matching_rules:
     - name: Student files
-      path: **/*
+      path: /**/*
