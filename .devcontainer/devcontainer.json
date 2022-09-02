@@ -1,0 +1,48 @@
+{
+  "name": "Haskell (Community)",
+  // uncomment to download container image from Docker Hub
+  "image": "UCSC-CSE-114A/ucsc-cse-114a-devcontainer",
+
+  // uncomment to build container locally
+  // "build": {
+  //   // "dockerfile": "Dockerfile",
+  //   "args": {
+  //     // Update 'GHC_VERSION' to pick a GHC version: recommended, latest, 9.2, 9.0, 8.10, 8.8, 8.6
+  //     "GHC_VERSION": "9.0"
+  //   }
+  // },
+  // Configure tool-specific properties.
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      // Set *default* container specific settings.json values on container create.
+      "settings": {
+        "haskell.manageHLS": "GHCup",
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "haskell.hlintOn": true,
+        "haskell.diagnosticsOnChange": true,
+        "haskell.liquidOn": true,
+        "haskell.completionSnippetsOn": true,
+        "haskell.formatOnImportOn": true,
+        "haskell.formattingProvider": "ormolu",
+        "haskell.languageServerVariant": "haskell-language-server",
+        "hoogle-vscode.useCabalDependencies": true,
+        "git.defaultCloneDirectory": "/workspaces"
+      },
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": [
+        "haskell.haskell",
+        "phoityne.phoityne-vscode",
+        "justusadam.language-haskell",
+        "eriksik2.vscode-ghci",
+        "jcanero.hoogle-vscode",
+        "GitHub.classroom"
+      ]
+    }
+  },
+  // Use 'postCreateCommand' to run commands after the container is created.
+  // "postCreateCommand": ""
+
+  // Comment out to connect as root instead. To add a non-root user, see: https://aka.ms/vscode-remote/containers/non-root.
+  "remoteUser": "vscode"
+}

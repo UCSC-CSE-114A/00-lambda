@@ -16,12 +16,15 @@ executable hw0
                     process,
                     tasty,
                     tasty-hunit,
+                    dequeue,
+                    clock,
+                    json,
                     elsa
   default-language: Haskell2010
   main-is:          Main.hs
 
 test-suite test
-  default-language: Haskell98
+  default-language: Haskell2010
   type:             exitcode-stdio-1.0
   ghc-options:      -threaded
   main-is:          Main.hs
@@ -31,4 +34,7 @@ test-suite test
                     process,
                     tasty,
                     tasty-hunit,
+                    dequeue,
+                    clock,
+                    json,
                     elsa
