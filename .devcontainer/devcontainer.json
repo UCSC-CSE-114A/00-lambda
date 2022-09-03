@@ -1,7 +1,7 @@
 {
   "name": "Haskell (Community)",
   // uncomment to download container image from Docker Hub
-  "image": "ucsc-cse-114a/ucsc-cse-114a-devcontainer",
+  "image": "ghcr.io/ucsc-cse-114a/cs114a-devcontainer:latest",
 
   // uncomment to build container locally
   // "build": {
