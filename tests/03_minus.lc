@@ -121,3 +121,7 @@ eval eq_one_two :
 eval eq_two_two :
   EQL TWO TWO
   =~> TRUE
+
+eval eq_two_one :
+  EQL TWO ONE
+  =~> FALSE
