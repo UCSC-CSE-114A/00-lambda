@@ -181,7 +181,10 @@ runTests groups = do
     (tests sc groups) `catch` (\(e :: ExitCode) -> do
       (n, tot) <- readIORef sc
       putStrLn ("OVERALL SCORE = " ++ show n ++ " / "++ show tot)
-      throwIO e)
+      case (tot > 0) of
+        True -> throwIO e
+        False -> exitFailure
+    )
 
 tests :: Score -> [Score -> TestTree] -> TestTree
 tests x gs = testGroup "Tests" [ g x | g <- gs ]
