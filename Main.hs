@@ -136,16 +136,16 @@ unit1 sc = testGroup "Unit 1"
       "eq_zero_zero"
   , mkTest
       (check "03_minus.lc")
-      "eq_zero_one"
+      "eq_one_two"
       True
       5
-      "eq_zero_one"
+      "eq_one_two"
   , mkTest
       (check "03_minus.lc")
-      "eq_one_two"
+      "eq_two_one"
       True
       5
-      "eq_one_two"
+      "eq_two_one"
   , mkTest
       (check "03_minus.lc")
       "eq_two_two"
