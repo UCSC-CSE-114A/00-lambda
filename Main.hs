@@ -136,22 +136,28 @@ unit1 sc = testGroup "Unit 1"
       "eq_zero_zero"
   , mkTest
       (check "03_minus.lc")
+      "eq_zero_one"
+      True
+      5
+      "eq_zero_one"
+  , mkTest
+      (check "03_minus.lc")
       "eq_one_two"
       True
       5
       "eq_one_two"
   , mkTest
       (check "03_minus.lc")
-      "eq_two_one"
+      "eq_two_two"
       True
       5
-      "eq_two_one"
+      "eq_two_two"
   , mkTest
       (check "03_minus.lc")
-      "eq_two_two"
+      "eq_two_one"
       True
       5
-      "eq_two_two"
+      "eq_two_one"
   ]
   where
     mkTest :: (Show b, Eq b) => (a -> IO b) -> a -> b -> Int -> String -> TestTree
