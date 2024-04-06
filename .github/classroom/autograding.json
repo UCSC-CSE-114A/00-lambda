@@ -219,6 +219,16 @@
       "comparison": "included",
       "timeout": 10,
       "points": 5
+    },
+    {
+      "name": "eq_two_one",
+      "run": "stack run -- -p eq_two_one",
+      "setup": "",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
     }
   ]
 }
