@@ -23,4 +23,4 @@ prepare: distclean
 	mv ../$(ASGN)-$(COMPILER).tgz .
 
 submit:
-	python3 -m autograder.cli.submission.submit tests/*
+	python3 -m autograder.cli.submission.submit INTEGRITY.md tests/*
