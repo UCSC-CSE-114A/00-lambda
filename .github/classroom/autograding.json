@@ -173,8 +173,8 @@
             "points": 5
         },
         {
-            "name": "sub_two_three",
-            "run": "stack run -- -p sub_two_three",
+            "name": "sub_one_two",
+            "run": "stack run -- -p sub_one_two",
             "setup": "",
             "input": "",
             "output": "",
