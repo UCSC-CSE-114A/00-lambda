@@ -53,8 +53,8 @@
             "points": 5
         },
         {
-            "name": "suc_one",
-            "run": "stack run -- -p suc_one",
+            "name": "incr_one",
+            "run": "stack run -- -p incr_one",
             "setup": "",
             "input": "",
             "output": "",

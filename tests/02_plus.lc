@@ -8,16 +8,16 @@ let TWO   = \f x -> f (f x)
 let THREE = \f x -> f (f (f x))
 let FOUR  = \f x -> f (f (f (f x)))
 
-let SUC   = \n f x -> f (n f x)
-let ADD   = \n m -> n SUC m
+let INCR  = \n f x -> f (n f x)
+let ADD   = \n m -> n INCR m
 let MUL   = \n m -> n (ADD m) ZERO
 
 
 -------------------------------------------------------------------------------
 -- YOU SHOULD ONLY MODIFY THE TEXT BELOW, JUST THE PARTS MARKED AS COMMENTS
 -------------------------------------------------------------------------------
-eval suc_one :
-  SUC ONE
+eval incr_one :
+  INCR ONE
   -- (a) fill in your reductions here
   =d> TWO
 
