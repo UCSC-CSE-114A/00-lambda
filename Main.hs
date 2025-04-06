@@ -38,10 +38,10 @@ unit1 sc = testGroup "Unit 1"
       "bool: or_true_false"
   , mkTest
       (check "02_plus.lc")
-      "suc_one"
+      "incr_one"
       True
       10
-      "add: suc_one"
+      "add: incr_one"
   , mkTest
       (check "02_plus.lc")
       "add_one_zero"
@@ -111,10 +111,10 @@ unit1 sc = testGroup "Unit 1"
       "sub_two_two"
   , mkTest
       (check "03_minus.lc")
-      "sub_two_three"
+      "sub_one_two"
       True
       5
-      "sub_two_three"
+      "sub_one_two"
   , mkTest
       (check "03_minus.lc")
       "isz_zero"
